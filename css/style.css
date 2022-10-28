@@ -27,20 +27,26 @@ body {
 
 a {
   margin: 5%;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .header h1 {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   background-color: lightgrey;
-  margin: 10px;
-  width: 250px;
-
+  width: 300px;
+  padding: 5px;
+  margin-bottom: 10px
 }
 
-/* .hero-banner {
+.hero-banner {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
   background-image: url(../images/vector-jan-2021-73_generated.jpg);
-} */
+height: 100px;
+}
 
 
 h1,
