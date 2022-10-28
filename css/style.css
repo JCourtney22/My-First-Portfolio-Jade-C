@@ -45,9 +45,33 @@ a {
   justify-content: flex-end;
   align-items: flex-end;
   background-image: url(../images/vector-jan-2021-73_generated.jpg);
-height: 100px;
+  height: 100px;
 }
 
+.page-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas:
+  "banner banner banner"
+  "about about about"
+  "portfolio portfolio portfolio"
+  "portfolio portfolio portfolio"
+  "portfolio portfolio portfolio"
+  "contact contact contact";
+}
+
+#about {
+  grid-area: about;
+}
+
+#portfolio {
+  grid-area: portfolio;
+}
+
+#contact {
+  grid-area: contact;
+}
 
 h1,
 h2,
