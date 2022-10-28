@@ -28,8 +28,10 @@ One of the first challenges I came across was how I was going to tackle this pro
 
 # Things I learned
 
+Although a challenge for me, I took great pride in learning how to layout my portfolio. I conducted plenty of research regarding css grids and nested grids, and with this I as able to gain confidence and understanding in using css grids. I'm a visual person and so I found that I needed to see my new knowledge more clearly on the webpage, and so I coloured each area with a different background colour. This allowed me to understand my mistakes and errors, which in turn allowed me to improve and correct my code.
 
- 
+ ![127 0 0 1_5500_index html (1)](https://user-images.githubusercontent.com/115502589/198712087-dc25cae6-803b-4f09-9554-85a4dfe083af.png)
+
 # License
   
 Please refer to the LICENSE in the repo.
