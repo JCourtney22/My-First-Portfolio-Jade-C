@@ -9,6 +9,40 @@ body {
   line-height: 1.5;
 }
 
+
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-color: lightcyan;
+  height: 100px;
+}
+
+#navbar {
+  display: flex;
+  width: 300px;
+}
+
+a {
+  margin: 5%;
+}
+
+.header h1 {
+  display: flex;
+  justify-content: center;
+  background-color: lightgrey;
+  margin: 10px;
+  width: 250px;
+
+}
+
+/* .hero-banner {
+  background-image: url(../images/vector-jan-2021-73_generated.jpg);
+} */
+
+
 h1,
 h2,
 h3,
