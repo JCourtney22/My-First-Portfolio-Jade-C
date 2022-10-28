@@ -15,21 +15,20 @@ Here are the critical requirements necessary to develop a portfolio that satisfi
 
 I began by practicing my skill of wireframing to picture how I wanted to layout my portfolio. I came up with this initial and basic design:
 
+<img width="717" alt="wireframe1" src="https://user-images.githubusercontent.com/115502589/198709588-9edd4a95-f95e-4dfd-aa77-31e45a662577.PNG">
+
 This design made it clear that I would need to develop and use my skills in flexbox and ccs grids, including expanded my understanding of how to implement nested grids.
 
 # Challenges 
  
- One of the first challenges I came across was how I was going to tackle this project. I decided on a systematic, top-down approach. I looked at my wireframe and recogised that my first area to work on would be the navigation layout. Ths required me to use flexbox to align my elements as desired. It took me many attempts at trial and error to understand which attributes I needed, which selectors to target and how I wanted to each part to sit. In the screenshot below, you can see that I used the inspect tool to help me play with the flexbox features so I could see the impact without changing my code too much. From this, I was able to see where I was going wrong and make corrections to my code. I then decided to tackle the layout of portfolio before adding content, style and responsivenes.
+One of the first challenges I came across was how I was going to tackle this project. I decided on a systematic, top-down approach. I looked at my wireframe and recogised that my first area to work on would be the navigation layout. Ths required me to use flexbox to align my elements as desired. It took me many attempts at trial and error to understand which attributes I needed, which selectors to target and how I wanted each part to sit. In the screenshot below, you can see that I used the inspect tool to help me play with the flexbox features so I could see the impact without changing my code too much. From this, I was able to see where I was going wrong and make corrections to my code. I then decided to tackle the layout of portfolio before adding content, style and responsiveness to my portfolio.
 
- insert screenshot here.
+![screengrab1](https://user-images.githubusercontent.com/115502589/198709836-103a41c9-a73e-4cd1-b6da-333c1316d3b9.png)
+
 
 # Things I learned
 
-I learnt to be resilient and work in a systematic manner. I found specific ways of styling css to make it more conscise and I developed my understanding of semantic elements further.
 
-The screenshot below shows my deployed website (https://jcourtney22.github.io/Module-1-Challenge/).
-
-![jcourtney22 github io_Module-1-Challenge_](https://user-images.githubusercontent.com/115502589/197534815-5046c471-8dbf-416a-ac03-df3e2c8daab7.png)
  
 # License
   
