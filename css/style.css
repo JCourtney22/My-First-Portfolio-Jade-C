@@ -51,26 +51,65 @@ a {
 .page-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   grid-template-areas:
-  "banner banner banner"
   "about about about"
-  "portfolio portfolio portfolio"
-  "portfolio portfolio portfolio"
   "portfolio portfolio portfolio"
   "contact contact contact";
 }
 
 #about {
   grid-area: about;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: lightcoral;
 }
 
 #portfolio {
   grid-area: portfolio;
+  background-color: lightgreen;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+  "portfolioh2 portfolio1 portfolio1"
+  "portfolioh2 portfolio2 portfolio3"
+  "portfolioh2 portfolio4 portfolio5";
+}
+
+#portfolioh2 {
+  grid-area: portfolioh2;
+  background-color: lightgoldenrodyellow;
+}
+
+#portfolio1 {
+  grid-area: portfolio1;
+  background-color: lightgray;
+}
+
+#portfolio2 {
+  grid-area: portfolio2;
+  background-color: lightseagreen;
+}
+
+#portfolio3 {
+  grid-area: portfolio3;
+  background-color: blueviolet;
+}
+
+#portfolio4 {
+  grid-area: portfolio4;
+  background-color: brown;
+}
+
+#portfolio5 {
+  grid-area: portfolio5;
+  background-color: lightsalmon;
 }
 
 #contact {
   grid-area: contact;
+  background-color: lightpink;
 }
 
 h1,
