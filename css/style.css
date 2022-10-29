@@ -45,8 +45,8 @@ body {
   align-items: flex-end;
 }
 
-a:link,
-a:visited {
+a[href*="#"]:link,
+a[href*="#"]:visited {
   margin: 5%;
   text-decoration: none;
   cursor: pointer;
@@ -110,16 +110,6 @@ a:visited {
   "portfolioh2 portfolio4 portfolio5";
 }
 
-/* Class selector targetting backgroun images */
-
-/* {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: grid;
-  align-content: flex-end;
-} */
-
 #portfolioh2 {
   grid-area: portfolioh2;
 }
@@ -135,9 +125,20 @@ a:visited {
 
 #portfolio1 {
   grid-area: portfolio1;
-  background-image: url(../images/refactory2.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+  display: flex;
+  background-color: aqua;
+  margin: 0;
+}
+
+.img-container {
+  display:flex;
+  overflow: hidden;
+}
+
+#portfolio1 h3 {
+  position:absolute;
+  display: flex;
+  background-color: azure;
 }
 
 #portfolio2 {
@@ -158,10 +159,6 @@ a:visited {
 #portfolio5 {
   grid-area: portfolio5;
   background-image: url(../images/portfolio5.jpg);
-}
-
-h3 {
-
 }
 
 #contact {
