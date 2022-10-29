@@ -9,20 +9,40 @@ body {
   line-height: 1.5;
 }
 
-
+/* Navigation Flexbox */
 
 .header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-end;
-  background-color: lightcyan;
-  height: 100px;
+  background-color: rgb(153,213,201);
+  height: 120px;
+}
+
+.avatar {
+  position:absolute;
+  width: 10%;
+  height: 20%;
+  border-radius: 50%;
+  margin: 5px 0px 0px 70px;
+  z-index: 1;
+}
+
+.header h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(67,129,193);
+  width: 300px;
+  height: 50px;
+  margin-top: 100px;
+  z-index: 1;
 }
 
 #navbar {
   display: flex;
   width: 300px;
+  align-items: flex-end;
 }
 
 a {
@@ -31,27 +51,27 @@ a {
   cursor: pointer;
 }
 
-.header h1 {
-  display: flex;
-  justify-content: flex-end;
-  background-color: lightgrey;
-  width: 300px;
-  padding: 5px;
-  margin-bottom: 10px
-}
+/* Banner Flexbox */
 
 .hero-banner {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
   background-image: url(../images/vector-jan-2021-73_generated.jpg);
-  height: 100px;
+  background-repeat: no-repeat;
+  height: 200px;
 }
+
+/* Page Content Grids */
 
 .page-wrapper {
   display: grid;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: 300px 800px 300px;
   grid-template-areas:
   "about about about"
   "portfolio portfolio portfolio"
@@ -60,9 +80,19 @@ a {
 
 #about {
   grid-area: about;
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
   background-color: lightcoral;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 300px;
+  grid-template-areas:
+  "about aboutp aboutp";
+}
+
+#aboutp {
+  grid-area: aboutp;
+  display: flex;
+  align-items: center;
+  background-color: lightgreen;
 }
 
 #portfolio {
@@ -70,41 +100,65 @@ a {
   background-color: lightgreen;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: 400px 200px 200px;
   grid-template-areas:
   "portfolioh2 portfolio1 portfolio1"
   "portfolioh2 portfolio2 portfolio3"
   "portfolioh2 portfolio4 portfolio5";
 }
 
+/* Class selector targetting backgroun images */
+
+/* {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: grid;
+  align-content: flex-end;
+} */
+
 #portfolioh2 {
   grid-area: portfolioh2;
-  background-color: lightgoldenrodyellow;
+}
+
+#portfolio2,
+#portfolio3,
+#portfolio4,
+#portfolio5 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 #portfolio1 {
   grid-area: portfolio1;
-  background-color: lightgray;
+  background-image: url(../images/refactory2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #portfolio2 {
   grid-area: portfolio2;
-  background-color: lightseagreen;
+  background-image: url(../images/portfolio2.jpg);
 }
 
 #portfolio3 {
   grid-area: portfolio3;
-  background-color: blueviolet;
+  background-image: url(../images/portfolio3.jpg);
 }
 
 #portfolio4 {
   grid-area: portfolio4;
-  background-color: brown;
+  background-image: url(../images/portfolio4.jpg);
 }
 
 #portfolio5 {
   grid-area: portfolio5;
-  background-color: lightsalmon;
+  background-image: url(../images/portfolio5.jpg);
+}
+
+h3 {
+
 }
 
 #contact {
@@ -122,5 +176,6 @@ h6 {
 }
 
 p {
-  margin: 0;
+  padding: 15px;
+  text-align: center;
 }
