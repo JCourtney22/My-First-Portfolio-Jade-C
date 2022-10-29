@@ -15,7 +15,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: rgb(153,213,201);
+  background-color: rgb(207,177,183);
   height: 120px;
 }
 
@@ -45,11 +45,14 @@ body {
   align-items: flex-end;
 }
 
-a {
+a:link,
+a:visited {
   margin: 5%;
   text-decoration: none;
   cursor: pointer;
+  color:black;
 }
+
 
 /* Banner Flexbox */
 
@@ -166,14 +169,14 @@ h3 {
   background-color: lightpink;
 }
 
-h1,
+/* h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
   margin: 0;
-}
+} */
 
 p {
   padding: 15px;
