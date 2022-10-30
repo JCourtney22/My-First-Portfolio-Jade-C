@@ -9,6 +9,22 @@ body {
   line-height: 1.5;
 }
 
+h3 {
+  position:absolute;
+  display: flex;
+  background-color: azure;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 200px;
+  box-shadow: 5px 5px 5px lightgray;
+}
+
+p {
+  padding: 15px;
+  text-align: center;
+}
+
 /* Navigation Flexbox */
 
 .header {
@@ -125,21 +141,23 @@ a[href*="#"]:visited {
 
 #portfolio1 {
   grid-area: portfolio1;
-  display: flex;
-  background-color: aqua;
-  margin: 0;
 }
 
-.img-container {
-  display:flex;
-  overflow: hidden;
+/* The image isn't quite how I want it, but this is as close as my research and
+current understanding could get me to fitting the image suitably into the container
+whilst maintaining it as a link. */
+
+.img-container img {
+  height: 400px;
+  max-width: 100%;
+  object-fit: cover;
 }
 
-#portfolio1 h3 {
+/* #portfolio1 h3 {
   position:absolute;
   display: flex;
-  background-color: azureu;
-}
+  background-color: azure;
+} */
 
 #portfolio2 {
   grid-area: portfolio2;
@@ -166,16 +184,4 @@ a[href*="#"]:visited {
   background-color: lightpink;
 }
 
-/* h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-} */
 
-p {
-  padding: 15px;
-  text-align: center;
-}
