@@ -123,6 +123,9 @@ a[href*="#"]:visited {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 400px 200px 200px;
+  row-gap: 10px;
+  column-gap: 10px;
+  padding-right: 10px;
   grid-template-areas:
   "portfolioh2 portfolio1 portfolio1"
   "portfolioh2 portfolio2 portfolio3"
@@ -140,21 +143,22 @@ a[href*="#"]:visited {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  border: solid #592941;
 }
 
 #portfolio1 {
   grid-area: portfolio1;
   background-color: var(--bluegreen);
+  
 }
 
-/* The image isn't quite how I want it, but this is as close as my research and
-current understanding could get me to fitting the image suitably into the container
-whilst maintaining it as a link. */
+/* The image is now resposive and, with styling, appears to fit
+its container. */
 
 .img-container img {
-  height: 400px;
+  height: auto;
   max-width: 100%;
-  object-fit: cover;
+  border: solid #592941;
 }
 
 /* #portfolio1 h3 {
