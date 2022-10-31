@@ -9,10 +9,14 @@ body {
   line-height: 1.5;
 }
 
+:root {
+  --bluegreen: #99D5C9;
+}
+
 h3 {
   position:absolute;
   display: flex;
-  background-color: azure;
+  background-color: rgb(207,177,183);
   align-items: center;
   justify-content: center;
   height: 40px;
@@ -64,7 +68,6 @@ p {
 a[href*="#"]:link,
 a[href*="#"]:visited {
   margin: 5%;
-  text-decoration: none;
   cursor: pointer;
   color:black;
 }
@@ -90,7 +93,7 @@ a[href*="#"]:visited {
   background-repeat: no-repeat;
   background-position: center;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 300px 800px 300px;
+  grid-template-rows: 300px 800px 100px;
   grid-template-areas:
   "about about about"
   "portfolio portfolio portfolio"
@@ -100,7 +103,7 @@ a[href*="#"]:visited {
 #about {
   grid-area: about;
   display: grid;
-  background-color: lightcoral;
+  background-color: var(--bluegreen);
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 300px;
   grid-template-areas:
@@ -111,12 +114,12 @@ a[href*="#"]:visited {
   grid-area: aboutp;
   display: flex;
   align-items: center;
-  background-color: lightgreen;
+  background-color: var(--bluegreen);
 }
 
 #portfolio {
   grid-area: portfolio;
-  background-color: lightgreen;
+  background-color: var(--bluegreen);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 400px 200px 200px;
@@ -141,6 +144,7 @@ a[href*="#"]:visited {
 
 #portfolio1 {
   grid-area: portfolio1;
+  background-color: var(--bluegreen);
 }
 
 /* The image isn't quite how I want it, but this is as close as my research and
@@ -181,7 +185,7 @@ whilst maintaining it as a link. */
 
 #contact {
   grid-area: contact;
-  background-color: lightpink;
+  background-color: var(--bluegreen);
 }
 
 
