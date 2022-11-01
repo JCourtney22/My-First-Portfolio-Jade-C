@@ -25,10 +25,14 @@ One of the first challenges I came across was how I was going to tackle this pro
 
 ![screengrab1](https://user-images.githubusercontent.com/115502589/198709836-103a41c9-a73e-4cd1-b6da-333c1316d3b9.png)
 
+One other challenge is being able to successfully implement media query. Extensive research and trial and error has been unsucessful. I have left the media query in css for anyone to take a look and offer any tips and suggestions so I may extend my learning.
+
+I have also found placing images into the grid extremely difficult when they have not been background images. I have implemented the current knowledge and research I have gathered to allow the first picture to be clickable, but it is not appropriately sized all the time, although it is somewhat responsive to browser sizing.
+
 
 # Things I learned
 
-Although a challenge for me, I took great pride in learning how to layout my portfolio. I conducted plenty of research regarding css grids and nested grids, and with this I as able to gain confidence and understanding in using css grids. I'm a visual person and so I found that I needed to see my new knowledge more clearly on the webpage, and so I coloured each area with a different background colour. This allowed me to understand my mistakes and errors, which in turn allowed me to improve and correct my code.
+Although a challenge for me, I took great pride in learning how to layout my portfolio. I conducted plenty of research regarding css grids and nested grids, and with this I was able to gain confidence and understanding in using css grids. I'm a visual person and so I found that I needed to see my new knowledge more clearly on the webpage, and so I coloured each area with a different background colour. This allowed me to understand my mistakes and errors, which in turn allowed me to improve and correct my code.
 
  ![127 0 0 1_5500_index html (1)](https://user-images.githubusercontent.com/115502589/198712087-dc25cae6-803b-4f09-9554-85a4dfe083af.png)
 

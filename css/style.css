@@ -194,11 +194,10 @@ a[href*="#"]:visited {
 #portfolio1 {
   grid-area: portfolio1;
   background-color: var(--bluegreen);
-  
 }
 
 /* The first image is now more  resposive and, with styling, appears to fit
-its container. */
+its container btter except on large screens. Unable to debug currently.*/
 
 .img-container img {
   height: auto;
@@ -206,7 +205,6 @@ its container. */
   border: solid #592941;
   border-width: thick;
 }
-
 
 #portfolio2 {
   grid-area: portfolio2;
