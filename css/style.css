@@ -9,63 +9,55 @@ body {
   line-height: 1.5;
 }
 
+/* Media query attempted - unsure how to debug and make work. */
+
+@media only screen and (max-width: 600px) {
+  .page-wrapper {
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 200px 200px 400px 200px 200px 100px;
+    grid-template-areas:
+    "about about "
+    "portfolio portfolio"
+    "portfolio portfolio"
+    "portfolio portfolio"
+    "portfolio portfolio"
+    "contact contact";
+  }
+  #about {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px;
+    grid-template-areas:
+    "about aboutp";
+  }
+  #portfolio {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 400px 200px 200px;
+    row-gap: 50px;
+    column-gap: 50px;
+    padding-right: 50px;
+    grid-template-areas:
+    "portfolioh2 portfolioh2"
+    "portfolio1 portfolio1"
+    "portfolio2 portfolio3"
+    "portfolio4 portfolio5";
+  }
+}
+
 :root {
   --bluegreen: #99D5C9;
 }
 
-/* I have tried to use a range of research and the inspect tool to make an accurate
-media query for this but I cannot seem to make it work. */
-/* 
-@media only screen and (max-width: 1000px) {
-  .header {
-    flex-direction: column;
-  } */
-
-  /* .page-wrapper {
-    grid-template-columns: 1fr;
-    grid-template-rows: 200px 200px 200px 400px 200px 200px 200px;
-    grid-template-areas:  
-    "about"
-    "about"
-    "portfolio"
-    "portfolio"
-    "portfolio"
-    "contact"
-    "contact"
-    ;
-   }  */
-
-  /* #about {
-    grid-template-columns: 1fr;
-    grid-template-rows: 100px 200px;
-    grid-template-areas:
-    "about"
-    "aboutp"
-    ;
-  } */
-
-  /* #portfolio {
-    grid-template-columns: 1fr;
-    grid-template-rows: 100px 400px 200px 200px 200px 200px;
-    grid-template-areas:
-    "portfolioh2" 
-    "portfolio1"
-    "portfolio2"
-    "portfolio3"
-    "portfolio4"
-    "portfolio5"
-    ;
-  }
-} */
-
-/* h2 {
+h2 {
+  display: flex;
   justify-content: center;
-  align-items: center;
-  text-decoration: underline;
-  text-decoration-color: #592941;
-}  */
+  align-items: flex-start;
+}
 
-/* .h3 {
+#PortfolioPage {
+  padding-right: 40px;
+}
+
+h3 {
   position:absolute;
   display: flex;
   background-color: rgb(207,177,183);
@@ -74,14 +66,14 @@ media query for this but I cannot seem to make it work. */
   height: 40px;
   width: 200px;
   box-shadow: 5px 5px 5px lightgray;
-} */
+}
 
-/* p {
+p {
   padding: 15px;
   text-align: center;
-} */
+}
 
- /* Navigation */
+/* Navigation Flexbox */
 
 .header {
   display: flex;
@@ -94,7 +86,7 @@ media query for this but I cannot seem to make it work. */
 .avatar {
   position:absolute;
   width: 10%;
-  height: 15%;
+  height: 20%;
   border-radius: 50%;
   margin: 5px 0px 0px 70px;
   z-index: 1;
@@ -124,7 +116,8 @@ a[href*="#"]:visited {
   color:black;
 }
 
-/* Banner */
+
+/* Banner Flexbox */
 
 .hero-banner {
   display: flex;
@@ -135,125 +128,59 @@ a[href*="#"]:visited {
   height: 200px;
 }
 
-/* Page Content */
+/* Page Content Grids */
 
 .page-wrapper {
   display: grid;
   height: 100%;
   width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 200px 400px 300px 300px 300px;
+  grid-template-rows: 300px 800px 100px;
   grid-template-areas:
   "about about about"
-  "portfolioh1 portfolio1 portfolio1"
-  "portfolioh1 portfolio2 portfolio3"
-  "portfolioh1 portfolio4 portfolio5"
+  "portfolio portfolio portfolio"
   "contact contact contact";
 }
 
 #about {
   grid-area: about;
-  display: flex;
+  display: grid;
   background-color: var(--bluegreen);
-  justify-content: space-evenly;
-  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 300px;
+  grid-template-areas:
+  "about aboutp aboutp";
 }
 
-#about p {
-  margin-left: 500px;
-}
-
-#portfolioh1 {
-  grid-area: portfolioh1;
+#aboutp {
+  grid-area: aboutp;
   display: flex;
-  justify-content: center;
   align-items: center;
-}
-
-#portfolio1
-#portfolio2,
-#portfolio3,
-#portfolio4,
-#portfolio5 {
-  display: flex;
-}
-
-
-#portfolio1 {
-  grid-area: portfolio1;
-  display:flex;
-  background-color: aqua;
-  
-}
-
-#img1 {
-  max-width: 100%;
-  height: auto;
-  border: solid #592941;
-  border-width: thick;
-}
-
-h3 {
- display: flex;
- z-index: 1;
- background-color: beige;
- height: 50px;
-}
-
-#portfolio h2 {
-  align-items: center;
-}
-
-#portfolio2 {
-  grid-area: portfolio2;
-  background-color: bisque;
-}
-
-#portfolio3 {
-  grid-area: portfolio3;
-  background-color: blueviolet;
-}
-
-#portfolio4 {
-  grid-area: portfolio4;
-  background-color: blue;
-}
-
-#portfolio5 {
-  grid-area: portfolio5;
-  background-color: aquamarine;
-}
-
-#contact {
-  grid-area: contact;
   background-color: var(--bluegreen);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
 }
 
-/* #portfolio1 {
+#portfolio {
   grid-area: portfolio;
   background-color: var(--bluegreen);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 400px 200px 200px 200px;
+  grid-template-rows: 400px 200px 200px;
   row-gap: 10px;
   column-gap: 10px;
   padding-right: 10px;
-  padding-bottom: 30px;
   grid-template-areas:
   "portfolioh2 portfolio1 portfolio1"
   "portfolioh2 portfolio2 portfolio3"
   "portfolioh2 portfolio4 portfolio5";
-} */
+}
 
-/* #portfolioh2 {
+#portfolioh2 {
   grid-area: portfolioh2;
-} */
+}
 
-/* #portfolio2,
+#portfolio2,
 #portfolio3,
 #portfolio4,
 #portfolio5 {
@@ -262,32 +189,49 @@ h3 {
   background-position: center;
   border: solid #592941;
   border-width: thick;
-} */
+}
 
-/* #portfolio1 {
+#portfolio1 {
   grid-area: portfolio1;
   background-color: var(--bluegreen);
-} */
+  
+}
 
-/* The image is now more resposive and, with styling, appears to fit
+/* The first image is now more  resposive and, with styling, appears to fit
 its container. */
 
-/* .img-container img {
+.img-container img {
   height: auto;
-  max-height: 400px;
   max-width: 100%;
   border: solid #592941;
   border-width: thick;
-  object-fit: cover;
 }
 
 
+#portfolio2 {
+  grid-area: portfolio2;
+  background-image: url(../images/portfolio2.jpg);
+}
+
+#portfolio3 {
+  grid-area: portfolio3;
+  background-image: url(../images/portfolio3.jpg);
+}
+
+#portfolio4 {
+  grid-area: portfolio4;
+  background-image: url(../images/portfolio4.jpg);
+}
+
+#portfolio5 {
+  grid-area: portfolio5;
+  background-image: url(../images/portfolio5.jpg);
+}
 
 #contact {
   grid-area: contact;
-  background-color: var(--bluegreen);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  display:flex;
+  justify-content: space-around;
   align-items: center;
-}  */
+  background-color: var(--bluegreen);
+}
