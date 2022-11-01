@@ -40,7 +40,7 @@ Although a challenge for me, I took great pride in learning how to layout my por
 
 Below is a screenshot of my current profile (https://jcourtney22.github.io/Portfolio-Challenge-2/)
 
-![jcourtney22 github io_Portfolio-Challenge-2_](https://user-images.githubusercontent.com/115502589/199356984-8b687a5c-60ad-4722-a13e-ac0fe1d92345.png)
+![screencapture-jcourtney22-github-io-Portfolio-Challenge-2-2022-11-01-22_55_17](https://user-images.githubusercontent.com/115502589/199357359-56bbd20a-25a1-4044-91b4-c45f2695d933.png)
 
 
 # License
